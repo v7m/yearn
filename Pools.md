@@ -48,6 +48,7 @@
 ### Расчет APY, APR
 
 ```
+    let daily_yield = rolling_24h_lp_fee / tvl;
     let apr = daily_yield * 365.0 * 100;
     let apy = (1.0 + daily_yield).powf(365.0) - 1.0;
 ```
